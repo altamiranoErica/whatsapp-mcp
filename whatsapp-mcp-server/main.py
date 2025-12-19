@@ -247,9 +247,4 @@ def download_media(message_id: str, chat_jid: str) -> Dict[str, Any]:
         }
 
 if __name__ == "__main__":
-    mcp.run(
-        transport="streamable-http",  # transporte que entiende ElevenLabs
-        host="0.0.0.0",
-        port=3002,
-        path="/mcp"
-    )
+    mcp.run(transport="streamable-http")
